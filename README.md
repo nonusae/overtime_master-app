@@ -3,12 +3,12 @@
  ## Key requirement: company needs documentation that salaried employees did or did not get overtime each week
 
 
-## Models
+## Models:
 - Post -> date:date rationale:text
 - User -> Devise
 - AdminUser -> STI
 
-## Feature:
+## Feature: 
 - Approval Workflow
 - SMS Sending -> link to approval or overtime input
 - Administrate admin dasjboard
