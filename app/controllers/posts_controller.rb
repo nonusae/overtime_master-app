@@ -10,6 +10,7 @@ class PostsController < ApplicationController
 
 	def create
 		@post = Post.new(post_params)
+		@post.user_id = current_user.id #method provided by devise 
 
 		if @post.save
 			redirect_to @post, notice: 'Your post was create succesfully'
@@ -25,7 +26,7 @@ class PostsController < ApplicationController
 	private
 
 	def post_params
-		params.require(:post).permit(:data, :rationale)
+		params.require(:post).permit(:date, :rationale)
 	end
 
 	def  set_post
