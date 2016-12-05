@@ -17,7 +17,7 @@
 
 
 ## UI:
-- Bootstrap -> formatting
+- X Bootstrap -> formatting
 
 
 ## Refactor TODOS:
