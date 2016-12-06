@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-	before_action :set_post, only: [:show,:edit,:update]
+	before_action :set_post, only: [:show,:edit,:update,:destroy]
 	def index
 		@posts = Post.all
 	end
@@ -25,13 +25,18 @@ class PostsController < ApplicationController
 
 	def update
 		if @post.update(post_params)
-		redirect_to @post, notice: 'Your post was create succesfully'
+		redirect_to @post, notice: 'Your post was update succesfully'
 		else
 			render :edit
 		end
 	end
 
 	def show
+	end
+
+	def destroy
+		@post.delete
+		redirect_to posts_path, notice: 'Your post was deleted succesfully' #this prevent rails for looking for assoviated template for thi method in this case destroy.html.erb
 	end
 
 	private
