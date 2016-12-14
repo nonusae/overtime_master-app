@@ -18,6 +18,8 @@
 
 ## UI:
 - X Bootstrap -> formatting
+- Icons from Font Awesome
+- Update the style for forms
 
 
 ## Refactor TODOS:
