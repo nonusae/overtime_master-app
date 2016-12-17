@@ -15,6 +15,10 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem "gritter", "1.2.0"
 
 
+gem "administrate", "~> 0.2.2"
+gem 'bourbon'
+
+
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails', '~> 3.0'
